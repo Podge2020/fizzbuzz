@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FizzBuzz Paige Walters</title>
+</head>
+
+<body>
+<!-- Print numbered list with fun twist substituting with the word "Fizz" if multiples of 3, "Buzz" if multiples of 5, or "FizzBuzz" if both-->
+
+<script>
+
+//FizzBuzz function here with JavaScript 
+function FizzBuzz() {
+
+    //FizzBuzz word prints when there is no remainder for numbers divisible by 3 and 5  
+    for(let i=1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            document.write( 'FizzBuzz', "<br>");
+        }
+
+    //Fizz word prints if number only divisible by 3     
+    else if (i % 3 === 0) {
+        document.write( 'Fizz', "<br>");
+    }    
+    
+    //Fizz word prints if number only divisible by 5     
+    else if (i % 5 === 0) {
+        document.write( 'Buzz', "<br>");
+    }
+
+    //Number in chain prints if not a factorial of 3 or 5      
+    else {
+        document.write(i, "<br>");
+    }
+    }
+
+}
+
+//Calls FizzBuzz function to run and print on HTML page 
+FizzBuzz(); 
+
+
+</script>
+
+</body>
+
+<!-- It is not beautiful but I will say I kept Googling and Youtubing until it made sense to get words and numbers on the page lol baby steps woohoo -->
+</html>
+

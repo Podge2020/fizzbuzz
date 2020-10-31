@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>2.11 Logical Operators</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+    //require log-in w/ PROMPT
+    let user = prompt("Who's There?", ''); 
+
+    //if enter Admin open up Password prompt 
+    if (user === "Admin") {
+
+        password = prompt("Enter Password Now"); 
+        if (password === 'TheMaster' ) {
+            alert( 'Welcome!' ) ;
+        }
+        else if (password === '' || password === null) {
+            alert( 'Canceled' );
+        }
+
+        else {
+            alert('I do not know you dude...');        
+            }
+   } 
+    </script>
+
+
+
+</body>
+
+</html>
